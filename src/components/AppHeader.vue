@@ -12,15 +12,18 @@ import { RouterLink } from 'vue-router';
     <header>
         <div class="container">
         <div class="titulo">
-<h1> <CoffeeIcon height="3rem" />
- COFFE QUALITY <br> CHALLENGE</h1>
+  <CoffeeIcon height="4rem" />
+  <div>
+    <h1>COFFE QUALITY</h1>
+    <h1>CHALLENGE</h1>
+  </div>
 </div>
       <div class="navegation">
     <nav class="nav-links">
         <ul>
-            <li><RouterLink to="/"><HouseIcon height="1em" />Home</RouterLink></li>
-            <li><RouterLink to="/avaliacao"> <ClipboardLineIcon height="1em" />Avaliação</RouterLink></li>
-            <li><RouterLink to="/ranking" > <TrophyOutlineSharpIcon height="1em" />Ranking</RouterLink></li>
+            <li><RouterLink to="/"><HouseIcon height="2rem" />Home</RouterLink></li>
+            <li><RouterLink to="/avaliacao"> <ClipboardLineIcon height="2rem" />Avaliação</RouterLink></li>
+            <li><RouterLink to="/ranking" > <TrophyOutlineSharpIcon height="2rem" />Ranking</RouterLink></li>
             <li><PeopleIcon height="3rem" /></li>
             </ul>
             
@@ -39,11 +42,11 @@ import { RouterLink } from 'vue-router';
  }
 .navegation ul {
     display: flex;
-    gap: 5vw;
+    gap: 3vw;
     font-size: 1rem;
 }
 .navegation ul li{
-    gap: 5vw;
+    gap: 3vw;
     display: flex;
     font-size: 1rem;
     
@@ -55,5 +58,53 @@ import { RouterLink } from 'vue-router';
 .navegation  ul li a{
     text-decoration: none;
     color: black;
+    display: flex; 
+    align-items: center;
+}
+.titulo h1 a {
+
+    display: flex;
+    margin: 0vw 0vw 0vw 0vw;
+    align-items: center;
+}
+header {
+    padding: 1rem 3rem;
+}
+header {
+    border-bottom: 2px solid #333;
+}
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.titulo h1 {
+    margin: 0;
+    line-height: 1.1;
+}
+.navegation ul li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    padding-bottom: .5rem;
+}
+
+.navegation ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #8B4513;
+    transition: width .3s;
+}
+
+.navegation ul li a.router-link-exact-active::after {
+    width: 100%;
 }
 </style> 
