@@ -84,7 +84,7 @@ import star from '@/assets/star.png';
   color: #8A8378;
   font-size: 0.85rem;
   border: dashed #EFE9E4 1px;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 1.5rem;
   line-height: 1.6;
 }

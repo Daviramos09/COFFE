@@ -8,12 +8,10 @@ import iconMedalha from '@/assets/medalha.png';
 import TrophyIcon from '@iconify-vue/mdi/trophy';
 import ChartIcon from '@iconify-vue/mdi/chart-bar';
 
-// Ordena os cafés do maior pro menor pela média, sem alterar o array original
 const cafesOrdenados = computed(() => {
   return [...coffeA].sort((a, b) => b.media - a.media);
 });
 
-// Retorna o número de estrelas cheias (0 a 5) com base na média (0 a 10)
 function estrelas(media) {
   return Math.round(media / 2);
 }
