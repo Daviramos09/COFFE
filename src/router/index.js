@@ -21,7 +21,8 @@ const router = createRouter({
       path: '/ranking',
       name: 'ranking',
       component: RankingView
-    }
+    },
+    { path: '/avaliacoes', component: AvaliacaoView },
   ],
 })
 

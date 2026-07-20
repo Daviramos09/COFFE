@@ -26,7 +26,7 @@ import { RouterLink } from 'vue-router';
             <li><RouterLink to="/ranking" > <TrophyOutlineSharpIcon height="2rem" />Ranking</RouterLink></li>
             <li><PeopleIcon height="3rem" /></li>
             </ul>
-            
+
    </nav>
   </div>
   </div>
@@ -49,7 +49,7 @@ import { RouterLink } from 'vue-router';
     gap: 3vw;
     display: flex;
     font-size: 1rem;
-    
+
 }
 .navegation {
  margin: 0vw 3vw 0vw 0vw;
@@ -58,7 +58,7 @@ import { RouterLink } from 'vue-router';
 .navegation  ul li a{
     text-decoration: none;
     color: black;
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 .titulo h1 a {
@@ -107,4 +107,4 @@ header {
 .navegation ul li a.router-link-exact-active::after {
     width: 100%;
 }
-</style> 
+</style>
